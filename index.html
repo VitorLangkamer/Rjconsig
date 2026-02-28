@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO básico -->
+  <title>RJConsig — Crédito Rápido e Seguro para Trabalhadores e Famílias</title>
+  <meta name="description"
+    content="Antecipe seu FGTS, faça consignado CLT ou Crédito Bolsa Família com as melhores taxas do mercado. Aprovação rápida, sem consulta SPC e liberação via Pix." />
+  <meta name="keywords"
+    content="antecipação FGTS, consignado CLT, crédito Bolsa Família, empréstimo pessoal, RJConsig" />
+
+  <!-- Open Graph (compartilhamento em redes sociais) -->
+  <meta property="og:title" content="RJConsig — Confiança que Resolve" />
+  <meta property="og:description" content="Crédito rápido e seguro para trabalhadores e famílias. Simule agora!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <!-- Favicon (emoji fallback) -->
+  <link rel="icon" href="assets/logo.png" />
+
+  <!-- Google Fonts — Barlow (display) + Nunito (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Nunito:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+     NAVBAR — Navegação principal fixada no topo
+     ============================================================ -->
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="nav-logo" aria-label="RJConsig — Início">
+        <img src="assets/logo.png" alt="Logo RJConsig" />
+      </a>
+
+      <!-- Links de navegação (desktop) -->
+      <nav class="nav-links" role="navigation" aria-label="Menu principal">
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#simular" class="btn-simulate nav-link-no-effect"><span style="color: #fff;">SimularAgora</span></a>
+      </nav>
+
+      <!-- Hamburguer — visível apenas em mobile -->
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+     HERO — Seção de abertura
+     ============================================================ -->
+  <main>
+   <section id="inicio" class="hero" aria-labelledby="hero-title">
+
+  <!-- 1. Vídeo — fora do hero-content, primeiro filho -->
+  <div class="video-Hero">
+    <video src="assets/video-hero.mp4" autoplay muted loop playsinline></video>
+  </div>
+
+  <!-- 2. Overlay gradiente — entre o vídeo e o texto -->
+  <div class="hero-overlay"></div>
+
+  <!-- 3. Conteúdo — acima de tudo pelo z-index -->
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      100% Online · Aprovação em Minutos
+    </div>
+    <h1 id="hero-title" class="hero-title">
+      Crédito rápido e seguro para<br />
+      <span class="highlight">trabalhadores e famílias.</span>
+    </h1>
+    <p class="hero-subtitle">
+      Confiança que resolve hoje o que você precisa agora.
+    </p>
+    <div class="hero-cta">
+      <a href="#simular" class="btn-primary btn-lg">Simular Gratuitamente →</a>
+      <a href="#como-funciona" class="btn-outline btn-lg">Como Funciona</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+  <span>Saiba mais</span>
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+  </svg>
+</div>
+
+</section>
+
+    <!-- ============================================================
+     COMO FUNCIONA — 3 etapas
+     ============================================================ -->
+    <section id="como-funciona" class="steps-section" aria-labelledby="steps-title">
+      <div class="container">
+
+        <span class="section-tag">Fluxo Simplificado</span>
+        <h2 id="steps-title" class="section-title">Dinheiro na conta em 3 etapas</h2>
+
+        <div class="steps-grid">
+
+          <!-- Etapa 1 -->
+          <article class="step-card reveal reveal-delay-1">
+            <div class="step-number" aria-hidden="true">01</div>
+            <div class="step-icon" aria-hidden="true">📋</div> <!--Treocar por um svg-->
+            <h3 class="step-title">Simule Online</h3>
+            <p class="step-desc">
+              Preencha o formulário com seus dados básicos para encontrarmos
+              a melhor oferta para você, sem sair de casa.
+            </p>
+          </article>
+
+          <!-- Etapa 2 -->
+          <article class="step-card reveal reveal-delay-2">
+            <div class="step-number" aria-hidden="true">02</div>
+            <div class="step-icon" aria-hidden="true">✅</div> <!--Treocar por um svg-->
+            <h3 class="step-title">Aprove a Oferta</h3>
+            <p class="step-desc">
+              Analise as condições personalizadas e assine o contrato
+              digitalmente, sem sair de casa.
+            </p>
+          </article>
+
+          <!-- Etapa 3 -->
+          <article class="step-card reveal reveal-delay-3">
+            <div class="step-number" aria-hidden="true">03</div>
+            <div class="step-icon" aria-hidden="true">⚡</div> <!--Treocar por um svg-->
+            <h3 class="step-title">Receba via Pix</h3>
+            <p class="step-desc">
+              Após a aprovação, o dinheiro cai na sua conta em poucos
+              minutos pelo Pix. Simples assim!
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SOLUÇÕES DE CRÉDITO
+     ============================================================ -->
+    <section id="solucoes" class="solutions-section" aria-labelledby="solutions-title">
+      <div class="container">
+
+        <div class="solutions-header reveal">
+          <span class="section-tag">Nossas Soluções</span>
+          <h2 id="solutions-title" class="section-title">Nossas Soluções de Crédito</h2>
+          <p class="section-subtitle">
+            Desenvolvemos modalidades flexíveis para atender diferentes perfis
+            profissionais com as melhores taxas do mercado financeiro.
+          </p>
+        </div>
+
+        <!-- Card destaque — Antecipação FGTS -->
+        <article class="solution-featured reveal">
+          <div class="solution-content">
+            <span class="solution-featured-badge">⭐ Mais Popular</span> <!-- Trocar por um svg -->
+            <div class="solution-icon" aria-hidden="true">🏦</div> <!-- Trocar por um svg -->
+            <h3 class="solution-title">Antecipação FGTS</h3>
+            <p class="solution-desc">
+              Utilize seu saldo parado do FGTS de forma inteligente.
+              Não compromete sua renda mensal e o pagamento é feito
+              diretamente pelo fundo uma vez ao ano.
+            </p>
+            <ul class="benefits-list" aria-label="Benefícios Antecipação FGTS">
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Negativados aprovados
+              </li>
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Sem consulta SPC/Serasa
+              </li>
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Até 10 parcelas anuais
+              </li>
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Liberação via Pix
+              </li>
+            </ul>
+            <a href="https://wa.me/5527997436600?text=Ol%C3%A1!%20Quero%20simular%20Antecipa%C3%A7%C3%A3o%20FGTS."
+              target="_blank" rel="noopener noreferrer" class="btn-primary"
+              aria-label="Simular Antecipação FGTS via WhatsApp">
+              Simular Antecipação
+            </a>
+          </div>
+          <div class="solution-illustration" aria-hidden="true">🏛️</div> <!--mudare icone-->
+        </article>
+
+        <!-- Cards menores — Consignado + Bolsa Família -->
+        <div class="solutions-grid">
+
+          <!-- Consignado CLT -->
+          <article class="solution-card reveal reveal-delay-1">
+            <div class="solution-icon" aria-hidden="true">💼</div> <!-- Trocar por um svg -->
+            <h3 class="solution-title">Consignado CLT</h3>
+            <p class="solution-desc">
+              Crédito com desconto direto na folha de pagamento para
+              funcionários de empresas conveniadas.
+            </p>
+            <ul class="benefits-list" aria-label="Benefícios Consignado CLT">
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Menores taxas de juros
+              </li>
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Prazos de até 48 meses
+              </li>
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Sem boletos mensais
+              </li>
+            </ul>
+            <a href="https://wa.me/5527997436600?text=Ol%C3%A1!%20Quero%20simular%20Consignado%20CLT." target="_blank"
+              rel="noopener noreferrer" class="btn-outline" aria-label="Simular Consignado CLT via WhatsApp">
+              Simular Consignado
+            </a>
+          </article>
+
+          <!-- Crédito Bolsa Família -->
+          <article class="solution-card reveal reveal-delay-2">
+            <div class="solution-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+            <h3 class="solution-title">Crédito Bolsa Família</h3>
+            <p class="solution-desc">
+              Linha de crédito exclusiva para beneficiários de programas sociais,
+              com parcelas reduzidas e atendimento humanizado.
+            </p>
+            <ul class="benefits-list" aria-label="Benefícios Crédito Bolsa Família">
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Aprovação simplificada
+              </li>
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Parcelas de microcrédito
+              </li>
+              <li class="benefit-item">
+                <span class="check" aria-hidden="true">✓</span>
+                Atendimento humanizado
+              </li>
+            </ul>
+            <a href="https://wa.me/5527997436600?text=Ol%C3%A1!%20Quero%20simular%20Cr%C3%A9dito%20Bolsa%20Fam%C3%ADlia."
+              target="_blank" rel="noopener noreferrer" class="btn-outline"
+              aria-label="Simular Crédito Bolsa Família via WhatsApp">
+              Simular Benefício
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     SELOS DE CONFIANÇA
+     ============================================================ -->
+    <section class="trust-section" aria-label="Nossos diferenciais">
+      <div class="container">
+        <div class="trust-items">
+
+          <div class="trust-item reveal">
+            <div class="trust-icon" aria-hidden="true">⚡</div>
+            <span class="trust-label">Aprovação Rápida</span>
+          </div>
+
+          <div class="trust-item reveal reveal-delay-1">
+            <div class="trust-icon" aria-hidden="true">🔒</div> <!-- Trocar por um svg -->
+            <span class="trust-label">Sem Taxas Ocultas</span>
+          </div>
+
+          <div class="trust-item reveal reveal-delay-2">
+            <div class="trust-icon" aria-hidden="true">🛡️</div><!-- Trocar por um svg -->
+            <span class="trust-label">100% Seguro</span>
+          </div>
+
+          <div class="trust-item reveal reveal-delay-3">
+            <div class="trust-icon" aria-hidden="true">🤝</div><!-- Trocar por um svg -->
+            <span class="trust-label">Suporte Humano</span>
+          </div>
+
+          <div class="trust-item reveal">
+            <div class="trust-icon" aria-hidden="true">💻</div><!-- Trocar por um svg -->
+            <span class="trust-label">Tudo Online</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     DEPOIMENTOS — Histórias Reais
+     ============================================================ -->
+    <section id="depoimentos" class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+
+        <div class="reveal" style="text-align: center; margin-bottom: 0;">
+          <span class="section-tag">Histórias Reais</span>
+          <h2 id="testimonials-title" class="section-title" style="text-align: center;">
+            O que nossos clientes dizem
+          </h2>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Depoimento 1 -->
+          <article class="testimonial-card reveal reveal-delay-1">
+            <div class="quote-icon" aria-hidden="true">"</div>
+            <blockquote>
+              <p class="testimonial-text">
+                Estava precisando de dinheiro urgente para uma reforma. A antecipação
+                do FGTS foi muito rápida, em 30 minutos o dinheiro estava na conta.
+              </p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">M</div>
+              <div>
+                <p class="author-name">Maria Silva</p>
+                <p class="author-role">Auxiliar de Saúde</p>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Depoimento 2 -->
+          <article class="testimonial-card reveal reveal-delay-2">
+            <div class="quote-icon" aria-hidden="true">"</div>
+            <blockquote>
+              <p class="testimonial-text">
+                Atendimento excelente pelo WhatsApp. Tiraram todas as minhas dúvidas
+                sobre o empréstimo consignado. Recomendo muito pela transparência.
+              </p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">J</div>
+              <div>
+                <p class="author-name">João Oliveira</p>
+                <p class="author-role">Motorista CLT</p>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Depoimento 3 -->
+          <article class="testimonial-card reveal reveal-delay-3">
+            <div class="quote-icon" aria-hidden="true">"</div>
+            <blockquote>
+              <p class="testimonial-text">
+                Processo super transparente. Consegui antecipar meu FGTS sem sair de
+                casa e paguei umas contas atrasadas. Obrigado RJConsig!
+              </p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">A</div>
+              <div>
+                <p class="author-name">Ana Pereira</p>
+                <p class="author-role">Professora</p>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     FAQ + FORMULÁRIO DE SIMULAÇÃO
+     ============================================================ -->
+    <section id="duvidas" class="faq-simulation-section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq-sim-grid">
+
+          <!-- Coluna FAQ -->
+          <div class="faq-col">
+            <h2 id="faq-title" class="faq-title">Dúvidas Frequentes</h2>
+
+            <div class="faq-list" role="list">
+
+              <div class="faq-item" role="listitem">
+                <div class="faq-question">
+                  <span>Quem pode antecipar o Saque-Aniversário?</span>
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </div>
+                <div class="faq-answer">
+                  Qualquer trabalhador com saldo no FGTS que tenha aderido à
+                  modalidade de Saque-Aniversário junto à Caixa Econômica Federal.
+                  O processo é 100% online e não exige consulta SPC/Serasa.
+                </div>
+              </div>
+
+              <div class="faq-item" role="listitem">
+                <div class="faq-question">
+                  <span>Estou negativado, posso solicitar?</span>
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </div>
+                <div class="faq-answer">
+                  Sim! Para a modalidade de Antecipação FGTS, negativados são
+                  aprovados sem consulta ao SPC/Serasa, pois a garantia é o
+                  próprio saldo do FGTS. Para consignado, a análise é realizada
+                  com base na margem consignável.
+                </div>
+              </div>
+
+              <div class="faq-item" role="listitem">
+                <div class="faq-question">
+                  <span>Quais documentos preciso enviar?</span>
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </div>
+                <div class="faq-answer">
+                  Normalmente são necessários: RG ou CNH, CPF, comprovante de
+                  residência recente, e extrato do FGTS (para antecipação).
+                  Tudo pode ser enviado pelo WhatsApp, sem precisar sair de casa.
+                </div>
+              </div>
+
+              <div class="faq-item" role="listitem">
+                <div class="faq-question">
+                  <span>Em quanto tempo o dinheiro cai na conta?</span>
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </div>
+                <div class="faq-answer">
+                  Após a aprovação e assinatura do contrato digital, o valor é
+                  transferido via Pix em até 30 minutos no horário comercial.
+                  O processo completo costuma levar entre 1 a 2 horas.
+                </div>
+              </div>
+
+              <div class="faq-item" role="listitem">
+                <div class="faq-question">
+                  <span>O que é margem consignável?</span>
+                  <span class="faq-chevron" aria-hidden="true"></span>
+                </div>
+                <div class="faq-answer">
+                  Margem consignável é o valor máximo que pode ser descontado
+                  diretamente do seu salário, limitado a 30% da renda líquida
+                  para crédito consignado. Nossa simulação já calcula esse valor
+                  automaticamente para você.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Coluna Formulário de Simulação -->
+          <div id="simular">
+            <div class="sim-form-card reveal">
+              <h2 class="sim-form-title">Simule agora mesmo</h2>
+              <p class="sim-form-subtitle">
+                Veja sua oferta em segundos. Grátis e sem compromisso.
+              </p>
+
+              <!-- Formulário principal -->
+              <form id="sim-form" novalidate aria-label="Formulário de simulação de crédito">
+
+                <!-- Nome completo -->
+                <div class="form-group">
+                  <label for="sim-nome">Nome Completo</label>
+                  <input type="text" id="sim-nome" name="nome" placeholder="Digite seu nome" autocomplete="name"
+                    required />
+                  <span class="form-error" role="alert"></span>
+                </div>
+
+                <!-- WhatsApp + Modalidade (em linha) -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="sim-whatsapp">WhatsApp</label>
+                    <input type="tel" id="sim-whatsapp" name="whatsapp" placeholder="(21) 99000-0000" autocomplete="tel"
+                      maxlength="15" required />
+                    <span class="form-error" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="sim-credito">Crédito</label>
+                    <select id="sim-credito" name="credito" required>
+                      <option value="">Selecione...</option>
+                      <option value="Antecipacao FGTS">Antecipação FGTS</option>
+                      <option value="Consignado CLT">Consignado CLT</option>
+                      <option value="Credito Bolsa Familia">Crédito Bolsa Família</option>
+                    </select>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                </div>
+
+                <!-- Renda mensal -->
+                <div class="form-group">
+                  <label for="sim-renda">Renda Mensal</label>
+                  <input type="text" id="sim-renda" name="renda" placeholder="R$ 0,00" inputmode="numeric" required />
+                  <span class="form-error" role="alert"></span>
+                </div>
+
+                <!-- Botão de envio -->
+                <button type="submit" id="sim-submit" class="btn-primary btn-block btn-lg">
+                  Quero Minha Simulação →
+                </button>
+
+                <!-- Resultado (visível após simulação) -->
+                <div id="sim-result" class="sim-result" aria-live="polite">
+                  <p class="sim-result-label">Valor estimado aprovado</p>
+                  <p id="sim-result-value" class="sim-result-value">R$ 0,00</p>
+                  <p id="sim-result-parcela" class="sim-result-label" style="margin-top: 8px; font-size: 0.9rem;">—</p>
+                  <p class="sim-result-note">
+                    *Valor estimado para <span id="sim-result-modalidade"></span>.
+                    Sujeito à análise de crédito.
+                  </p>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Marca -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="Logo RJConsig" />
+            <span class="footer-logo-text">
+              <span class="white">RJ</span><span class="blue">Consig</span>
+            </span>
+          </div>
+          <p>
+            Facilitando o acesso ao crédito para milhares de brasileiros com
+            segurança, agilidade e taxas justas através de uma equipe parceira final.
+          </p>
+        </div>
+
+        <!-- Navegação -->
+        <nav aria-label="Links de navegação do rodapé">
+          <p class="footer-col-title">Navegação</p>
+          <ul class="footer-links">
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+          </ul>
+        </nav>
+
+        <!-- Legal -->
+        <div>
+          <p class="footer-col-title">Legal</p>
+          <ul class="footer-links">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Compliance Padrão...</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div>
+          <p class="footer-col-title">Fale Conosco</p>
+          <div>
+            <div class="footer-contact-item">
+              <span aria-hidden="true">✉️</span>
+              <a href="mailto:contato@rjconsig.com.br">contato@rjconsig.com.br</a>
+            </div>
+            <div class="footer-contact-item">
+              <span aria-hidden="true">📞</span>
+              <a href="tel:+552135214444">(21) 3521-4444</a>
+            </div>
+            <div class="footer-contact-item">
+              <span aria-hidden="true">💬</span>
+              <a href="https://wa.me/5527997436600" target="_blank" rel="noopener noreferrer">
+                WhatsApp Oficial
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Rodapé inferior -->
+      <div class="footer-bottom">
+        <p>© 2025 RJConsig. Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+        <p style="color: var(--color-text-muted); font-size: 0.7rem;">
+          Empresa regulamentada. Operações sujeitas à análise de crédito.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+     BOTÃO FLUTUANTE WHATSAPP
+     ============================================================ -->
+  <a href="https://wa.me/5527997436600?text=Ol%C3%A1!%20Quero%20tirar%20d%C3%BAvidas%20sobre%20cr%C3%A9dito."
+    target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar com a RJConsig pelo WhatsApp"
+    title="Atendimento pelo WhatsApp">
+    💬
+  </a>
+
+  <!-- ============================================================
+     SCRIPTS — carregados no final do body para performance
+     ============================================================ -->
+  <script src="js/main.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/simulation.js"></script>
+
+</body>
+
+</html>

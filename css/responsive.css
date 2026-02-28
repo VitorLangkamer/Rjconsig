@@ -1,0 +1,238 @@
+/* ==========================================================================
+   RJConsig — Responsividade
+   Arquivo: css/responsive.css
+   Descrição: Media queries para tablet (768px) e mobile (480px).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   TABLET — 1024px
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  :root {
+    --fs-4xl: 3rem;
+    --fs-3xl: 2.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .solution-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-illustration {
+    display: none;
+  }
+
+  .steps-grid {
+    gap: var(--space-4);
+  }
+
+  /* Remover setas entre steps em tablet */
+  .steps-grid .step-card::after {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   TABLET — 768px
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --fs-4xl: 2.5rem;
+    --fs-3xl: 2rem;
+    --fs-2xl: 1.75rem;
+  }
+
+  /* Navbar */
+  .nav-links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: rgba(11, 14, 26, 0.98);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--color-border);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition-base), opacity var(--transition-base);
+    z-index: 999;
+  }
+
+  .nav-links.mobile-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+    font-size: var(--fs-base);
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .nav-links .btn-primary {
+    margin: var(--space-4) var(--space-6);
+    width: calc(100% - var(--space-12));
+    border-radius: var(--radius-md);
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: var(--fs-3xl);
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .btn-primary,
+  .hero-cta .btn-outline {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Steps — 1 coluna */
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid .step-card::after {
+    display: none;
+  }
+
+  /* Solutions */
+  .solution-featured {
+    grid-template-columns: 1fr;
+    padding: var(--space-6);
+  }
+
+  .solution-illustration {
+    display: none;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Trust */
+  .trust-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+
+  /* Testimonials — 1 coluna */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FAQ + Simulação — 1 coluna */
+  .faq-sim-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* WhatsApp float */
+  .whatsapp-float {
+    bottom: var(--space-5);
+    right: var(--space-5);
+  }
+
+  /* Toast */
+  .toast-container {
+    left: var(--space-4);
+    right: var(--space-4);
+    bottom: var(--space-4);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE — 480px
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  :root {
+    --fs-4xl: 2rem;
+    --fs-2xl: 1.5rem;
+  }
+
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .section-padding {
+    padding: var(--space-16) 0;
+  }
+
+  .hero {
+    padding-bottom: var(--space-16);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: var(--fs-base);
+  }
+
+  /* Trust em 2 colunas */
+  .trust-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Form row em 1 coluna */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer em 1 coluna */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  /* Modal */
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .btn-primary,
+  .modal-actions .btn-outline {
+    width: 100%;
+  }
+
+  .solution-featured {
+    padding: var(--space-5);
+  }
+}
