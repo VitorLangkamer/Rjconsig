@@ -255,7 +255,7 @@ function parseCurrency(formatted) {
 
         // Aguarda o usuário ver o resultado antes de redirecionar
         setTimeout(() => {
-          window.open(`https://wa.me/5521999999999?text=${msg}`, '_blank');
+          window.open(`https://wa.me/5527997436600?text=${msg}`, '_blank');
         }, 1500);
 
         window.showToast('Simulação concluída! Abrindo WhatsApp...', 'success');
